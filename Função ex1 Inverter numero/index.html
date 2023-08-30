@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inverter Número</title>
+</head>
+<body>
+
+<h1>Inverter Número</h1>
+
+<p>Insira um número abaixo:</p>
+
+<input type="text" id="numeroInput">
+<button onclick="inverterNumero()">Inverter</button>
+
+<p id="resultado"></p>
+
+<script>
+function inverterNumero() {
+  // Obtém o elemento de entrada de texto
+  let numeroInput = document.getElementById("numeroInput");
+
+  // Obtém o valor inserido pelo usuário
+  let numero = numeroInput.value;
+
+  // Converte o número para uma string para facilitar a inversão
+  let numeroString = numero.toString();
+
+  // Inverte a string
+  let numeroInvertido = numeroString.split('').reverse().join('');
+
+  // Exibe o número invertido na página
+  let resultado = document.getElementById("resultado");
+  resultado.innerHTML = "Número invertido: " + numeroInvertido;
+}
+</script>
+
+</body>
+</html>
