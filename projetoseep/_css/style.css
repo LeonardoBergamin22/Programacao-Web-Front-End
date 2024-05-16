@@ -1,0 +1,47 @@
+body {
+    display: flex;
+}
+
+header {
+    display: flex;
+    height: 100%;
+    background-color: gray;
+}
+
+#todo {
+    display: flex;
+    width: 200x;
+    height: 400px;
+    margin: 20px;
+    background-color: red;
+    flex-direction: row;
+}
+
+#esquerda {
+    width: 30%;
+    height: 800px;
+    border-radius: 20px;
+    background-color: gray;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#direita {
+    width: 70%;
+    height: 800px;
+    border-radius: 20%;
+    background-color: grey;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    height: 30px;
+}
+
+a {
+    text-decoration: none;
+    background-color: lightblue;
+}
